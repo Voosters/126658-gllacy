@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Глейси</title>
+  </head>
+  <body>
+    <header class="main-header">
+	    <nav class="main-navigation">
+        <img src="img/index-logo.svg" height="" width="" alt="Логотип GllacyShop">
+		      <ul class="site-navigation">
+			      <li>
+              <a href="#">Каталог</a>
+            </li>
+			      <li>
+              <a href="#">Доставка и оплата</a>
+            </li>
+			      <li>
+              <a href="#">О компании</a>
+            </li>
+		      </ul>
+		    <div class="user-navigation">
+			    <span class="search">Поиск</span>
+			    <span class="login-link">Вход</span>
+			    <span class="cart">Корзина</span>
+		    </div>
+		    <div class="contacts-header">
+          <p>
+			      <span class="work-hours">с 10 до 20, ежедневно</span><br>
+			      <span class="phone-number">8 812 450 25 25</span>
+		      </p>
+        </div>
+	    </nav>
+	  </header>
+    <main class="catalog-container">
+      <ul class="menu-breadcrumbs">
+        <li class="menu-breadcrumbs-item">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="menu-breadcrumbs-item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="menu-breadcrumbs-item">Сливочное</li>
+      </ul>
+      <form class="filters"action="" method="get">
+        <fieldset class="sort-filter">
+          <legend>Сортировка:</legend>
+            <select>
+              <option>по популярности</option>
+            </select>
+        </fieldset>
+        <fieldset class="price-filter">
+          <div>
+            <label>
+              Цена:
+              <input type="text" value="100">
+              руб.
+            </label>
+            <label>
+                -
+              <input type="text" value="500">
+              руб.
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="fat-filter">
+          <legend>Жирность:</legend>
+            <input type="radio" id="radio1">
+              <label for="radio1">0%</label>
+            <input type="radio" id="radio2" checked>
+              <label for="radio2">до 10%</label>
+            <input type="radio" id="radio3">
+              <label for="radio3">до 30%</label>
+            <input type="radio" id="radio4">
+              <label for="radio4">выше 30%</label>
+        </fieldset>
+        <fieldset class="fillers-filter">
+          <legend>Наполнители:</legend>
+            <input type="checkbox" id="checkbox1" checked>
+              <label for="checkbox1">шоколадные</label>
+            <input type="checkbox" id="checkbox2" checked>
+              <label for="checkbox2">сахарные присыпки</label>
+            <input type="checkbox" id="checkbox3">
+              <label for="checkbox3">фрукты</label>
+            <input type="checkbox" id="checkbox4">
+              <label for="checkbox4">сиропы</label>
+            <input type="checkbox" id="checkbox5">
+              <label for="checkbox5">джемы</label>
+        </fieldset>
+        <button class="filters-button" type="submit">Применить</button>
+      </form>
+      <section class="main-catalog">
+        <h2 class="visually-hidden">Каталог</h2>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-01.jpg" alt="Сливочное мороженое с апельсиновым джемом">
+              <p class="best-item-price">310
+                <span class="best-item-weight">/кг</span>
+              </p>
+              <p class="best-item-description">
+                <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+              </p>
+          </div>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-02.jpg" alt="Сливочно-кофейное с кусочками шоколада">
+            <p class="best-item-price">380
+              <span class="best-item-weight">/кг</span>
+            </p>
+            <p class="best-item-description">
+              <span>Сливочно-кофейное с кусочками шоколада</span>
+            </p>
+          </div>
+
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-03.jpg" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <p class="best-item-price">355
+              <span class="best-item-weight">/кг</span>
+            </p>
+            <p class="best-item-description">
+              <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+            </p>
+          </div>
+
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-04.jpg" alt="Сливочное крем-брюле с карамельной подливкой">
+            <p class="best-item-price">415
+              <span class="best-item-weight">/кг</span>
+            </p>
+            <p class="best-item-description">
+              <span>Сливочное крем-брюле с карамельной подливкой</span>
+            </p>
+          </div>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-05.jpg" alt="Сливочное с брусничным джемом">
+              <p class="best-item-price">325
+              <span class="best-item-weight">/кг</span>
+              </p>
+            <p class="best-item-description">
+              <span>Сливочное с брусничным джемом</span>
+            </p>
+          </div>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-06.jpg" alt="Сливочно-черничное с цельными ягодами черники">
+            <p class="best-item-price">410
+              <span class="best-item-weight">/кг</span>
+            </p>
+            <p class="best-item-description">
+              <span>Сливочно-черничное с цельными ягодами черники</span>
+            </p>
+          </div>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-07.jpg" alt="Сливочно-лимонное с карамельной присыпкой">
+            <p class="best-item-price">375
+              <span class="best-item-weight">/кг</span>
+            </p>
+            <p class="best-item-description">
+              <span>Сливочно-лимонное с карамельной присыпкой</span>
+            </p>
+          </div>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-08.jpg" alt="Сливочное с шоколадной стружкой">
+            <p class="best-item-price">320
+              <span class="best-item-weight">/кг</span>
+            </p>
+            <p class="best-item-description">
+              <span>Сливочное с шоколадной стружкой</span>
+            </p>
+          </div>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-09.jpg" alt="Сливочно-ванильное с кусочками шоколада">
+              <p class="best-item-price">440
+              <span class="best-item-weight">/кг</span>
+              </p>
+            <p class="best-item-description">
+              <span>Сливочно-ванильное с кусочками шоколада</span>
+            </p>
+          </div>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-10.jpg" alt="Сливочное с ментоловым сиропом">
+            <p class="best-item-price">435
+              <span class="best-item-weight">/кг</span>
+            </p>
+            <p class="best-item-description">
+              <span>Сливочное с ментоловым сиропом</span>
+            </p>
+          </div>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-11.jpg" alt="Сливочное с кусочками черного шоколада">
+            <p class="best-item-price">355
+              <span class="best-item-weight">/кг</span>
+            </p>
+            <p class="best-item-description">
+              <span>Сливочное с кусочками черного шоколада</span>
+            </p>
+          </div>
+          <div class="best-item">
+            <img class="best-item-image" src="img/img-catalog-12.jpg" alt="Сливочное с мятным сиропом">
+            <p class="best-item-price">420
+              <span class="best-item-weight">/кг</span>
+            </p>
+            <p class="best-item-description">
+              <span>Сливочное с мятным сиропом</span>
+            </p>
+          </div>
+          <div class="pages">
+            <ul>
+              <li>
+                <a href="">1</a>
+              </li>
+              <li>
+                <a href="">2</a>
+              </li>
+              <li>
+                <a href="">3</a>
+              </li>
+              <li>
+                <a href="">4</a>
+              </li>
+              <li>
+                <a href="">5</a>
+              </li>
+            </ul>
+          </div>
+      </section>
+    </main>
+    <footer>
+	    <div class="footer-social">
+	      <a class="social-button" href="#">Твитер</a>
+		    <a class="social-button" href="#">Инстаграм</a>
+		    <a class="social-button" href="#">Фейсбук</a>
+		    <a class="social-button" href="#">Вконтакте</a>
+	    </div>
+	    <ul class="footer-menu">
+	      <li>Для поставщиков</li>
+		    <li>О производстве</li>
+		    <li>Наши документы</li>
+		    <li>Экологические стандарты</li>
+	    </ul>
+      <div class="footer-copyright">
+		    <a class="footer-copyright-logo"><img src="img/html-logo.svg" height="" width="" alt="Логотип HTML Academy"></a>
+		    <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2017</p>
+	    </div>
+    </footer>
+  </body>
+</html>
