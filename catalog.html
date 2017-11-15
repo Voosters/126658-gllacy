@@ -150,13 +150,13 @@
         </fieldset>
         <fieldset class="fat-filter">
           <legend>Жирность:</legend>
-            <input type="radio" id="radio1">
+            <input name="filter" type="radio" id="radio1">
               <label for="radio1">0%</label>
-            <input type="radio" id="radio2" checked>
+            <input name="filter" type="radio" id="radio2" checked>
               <label for="radio2">до 10%</label>
-            <input type="radio" id="radio3">
+            <input name="filter" type="radio" id="radio3">
               <label for="radio3">до 30%</label>
-            <input type="radio" id="radio4">
+            <input name="filter" type="radio" id="radio4">
               <label for="radio4">выше 30%</label>
         </fieldset>
         <fieldset class="fillers-filter">
@@ -359,17 +359,19 @@
     </main>
 	  <footer>
 	    <div class="footer-social">
+      <h2 class="visually-hidden">Социальные сети</h2>
 	      <a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твитер"></a>
 		    <a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a>
 		    <a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a>
 		    <a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте"></a>
 	    </div>
 	    <ul class="footer-menu">
+       <h2 class="visually-hidden">Дополнительное меню</h2>
       <img class="footer-menu-icon" src="img/heart.svg" width="15" height="13">
-	      <li>Для поставщиков</li>
-		    <li>О производстве</li>
-		    <li>Наши документы</li>
-		    <li>Экологические стандарты</li>
+	       <li><a href="#">Для поставщиков</a></li>
+		    <li><a href="#">О производстве</a></li>
+		    <li><a href="#">Наши документы</a></li>
+		    <li><a href="#">Экологические стандарты</a></li>
 	    </ul>
       <div class="footer-copyright">
          <a class="footer-copyright-logo"><img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML Academy"></a>

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body style="background-color: black;">
+  <body>
     <header class="main-header">
 	    <nav class="main-navigation">
         <img src="img/index-logo.svg" width="154" height="64"  alt="Логотип GllacyShop">
@@ -49,7 +49,7 @@
             </div>
             <div class="entrance">
             <a href="#"><img class="entrance-svg" src="img/entrance.svg" width="21" height="19" alt="Вход"></a>
-                        <form class="entrance-form" action="" method="post">
+             <form class="entrance-form" action="" method="post">
               <label>
                 <input type="email" name="login-email" required>
                 <span>Электронная почта</span>
@@ -65,8 +65,8 @@
                   <a href="#">Новая регистрация</a>
                 </div>
               </div>
-            </form>
-          </div>
+             </form>
+            </div>
 
           <div class="basket">
 			    <a href=""><img class="basket-svg" src="img/basket.svg" width="21" height="20" alt="Корзина"></a>
@@ -86,7 +86,7 @@
 	  <main class="container">
       <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
 	    <section class="slider">
-	      <h2>Лучшие сорта</h2>
+	      <h2 class="visually-hidden">Лучшие сорта</h2>
 	 	        <div class="slider-wrap">
             <input type="radio" id="button-1" name="controls" checked/>
               <label for="button-1"></label>
@@ -104,7 +104,9 @@
 			        </div>
 		        </div>
 
-			    <p class="slider-description">Крем-брюле и пломбир с малиновым джемом</p>
+			    <p class="slider-description-1">Крем-брюле и пломбир с малиновым джемом</p>
+          <p class="slider-description-2">Шоколадный пломбир и лимонный сорбет</p>
+          <p class="slider-description-3">Пломбир с помадкой и клубничный щербет</p>
 			      <button class="slider-button">Давайте оба!</button>
 		      </div>
 	    </section>
@@ -216,17 +218,19 @@
 	  </main>
 	  <footer>
 	    <div class="footer-social">
+      <h2 class="visually-hidden">Социальные сети</h2>
 	      <a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твитер"></a>
 		    <a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a>
 		    <a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a>
 		    <a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте"></a>
 	    </div>
 	    <ul class="footer-menu">
+      <h2 class="visually-hidden">Дополнительное меню</h2>
       <img class="footer-menu-icon" src="img/heart.svg" width="15" height="13">
-	      <li>Для поставщиков</li>
-		    <li>О производстве</li>
-		    <li>Наши документы</li>
-		    <li>Экологические стандарты</li>
+	      <li><a href="#">Для поставщиков</a></li>
+		    <li><a href="#">О производстве</a></li>
+		    <li><a href="#">Наши документы</a></li>
+		    <li><a href="#">Экологические стандарты</a></li>
 	    </ul>
       <div class="footer-copyright">
 		    <a class="footer-copyright-logo"><img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML Academy"></a>
