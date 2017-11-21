@@ -1,0 +1,67 @@
+body { 
+    margin: 0;
+	padding: 0;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 400;
+	color: #ffffff;
+	
+	background-color: #8aa495;
+	background-image: url(../img/bg.jpg);
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.site-navigation,
+.catalog-menu  {
+	font-weight: 700;
+	list-style: none;
+}
+
+.site-navigation a,
+.catalog-menu a {
+	color: #ffffff;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active,
+.catalog-menu a:hover,
+.catalog-menu a:focus,
+.catalog-menu a:active {
+	color: #ffbc9e;
+}
+
+.work-hours	{
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.phone-number	{
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.slider  {
+	background-image: url(../img/slider-item1.png);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+
+.banner-1	{
+	background-image: url(../img/raspberry-bg.jpg);
+	background-repeat: no-repeat;
+}
+
+.banner-2	{
+	background-image: url(../img/chocolate-bg.jpg);
+	background-repeat: no-repeat;
+}
+
+
+
+
