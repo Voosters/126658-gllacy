@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-body {
-=======
 body { 
->>>>>>> a5c3e9f0164346894cb0d936eae29a51813f3d51
+
     margin: 0;
 	padding: 0;
 	font-family: 'Roboto', Arial, sans-serif;
@@ -10,13 +7,8 @@ body {
 	line-height: 22px;
 	font-weight: 400;
 	color: #ffffff;
-<<<<<<< HEAD
-
-=======
-	
->>>>>>> a5c3e9f0164346894cb0d936eae29a51813f3d51
 	background-color: #8aa495;
-	background-image: url(../img/bg.jpg);
+	
 }
 
 a {
@@ -57,7 +49,6 @@ a {
 .slider  {
 	background-image: url(../img/slider-item1.png);
 	background-repeat: no-repeat;
-<<<<<<< HEAD
 	background-size: contain;
 }
 
@@ -73,35 +64,23 @@ a {
     padding: 14px 20px;
     position: relative;
 
-=======
-	background-size: contain;	
->>>>>>> a5c3e9f0164346894cb0d936eae29a51813f3d51
-}
+
 
 .banner-1	{
 	background-image: url(../img/raspberry-bg.jpg);
 	background-repeat: no-repeat;
-<<<<<<< HEAD
 
-=======
->>>>>>> a5c3e9f0164346894cb0d936eae29a51813f3d51
+
 }
 
 .banner-2	{
 	background-image: url(../img/chocolate-bg.jpg);
 	background-repeat: no-repeat;
-<<<<<<< HEAD
-  margin-right: 0;
-
-=======
->>>>>>> a5c3e9f0164346894cb0d936eae29a51813f3d51
-}
+	margin-right: 0;
 
 
 
 
-<<<<<<< HEAD
 
 
-=======
->>>>>>> a5c3e9f0164346894cb0d936eae29a51813f3d51
+
