@@ -1,4 +1,5 @@
 body { 
+
     margin: 0;
 	padding: 0;
 	font-family: 'Roboto', Arial, sans-serif;
@@ -6,9 +7,11 @@ body {
 	line-height: 22px;
 	font-weight: 400;
 	color: #ffffff;
-	
 	background-color: #8aa495;
+<<<<<<< HEAD
 	background-image: url(../img/slider-item1.jpg);
+=======
+>>>>>>> 7688af3185ebb10ea96e305b0e8f79073a4789cd
 	
 }
 
@@ -50,18 +53,37 @@ a {
 .slider  {
 	background-image: url(../img/slider-item1.png);
 	background-repeat: no-repeat;
-	background-size: contain;	
+	background-size: contain;
 }
+
+.banner {
+    width: 560px;
+    min-height: 230px;
+    border-radius: 15px;
+    float: left;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-right: 23px;
+    margin-left: -2px;
+    padding: 14px 20px;
+    position: relative;
+
+
 
 .banner-1	{
 	background-image: url(../img/raspberry-bg.jpg);
 	background-repeat: no-repeat;
+
+
 }
 
 .banner-2	{
 	background-image: url(../img/chocolate-bg.jpg);
 	background-repeat: no-repeat;
-}
+	margin-right: 0;
+
+
+
 
 
 
