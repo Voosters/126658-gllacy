@@ -12,10 +12,10 @@
   <div class="content-wrapper">
     <header class="main-header">
 	    <nav class="main-navigation">
-        <img src="img/logo.svg" width="154" height="64"  alt="Логотип GllacyShop">
+        <img src="img/index-logo.svg" width="154" height="64"  alt="Логотип GllacyShop">
 		      <ul class="site-navigation">
 			      <li>
-              <a href="catalog.html">Каталог</a>
+              <a class="menu-items" href="catalog.html">Каталог</a>
               <ul class="catalog-menu">
                 <li class="catalog-menu-item">
                   <a href="#">Новинки</a>
@@ -35,10 +35,10 @@
               </ul>
             </li>
 			      <li>
-              <a href="#">Доставка и оплата</a>
+              <a class="menu-items" href="#">Доставка и оплата</a>
             </li>
 			      <li>
-              <a href="#">О компании</a>
+              <a class="menu-items" href="#">О компании</a>
             </li>
 		      </ul>
 
@@ -118,12 +118,12 @@
 		    <h2 class="visually-hidden">Акции</h2>
 			<div class=" banner banner-1">
 		      <h3>Малинка даром!</h3>
-		        <p>При покупке 2 кг пломбира добавим в ваш заказ банку малинового варенья бесплатно.</p>
-			      <a href="#">Хочу варенье!</a></div>
+		        <p class="banners-description">При покупке 2 кг пломбира добавим в ваш заказ банку малинового варенья бесплатно.</p>
+			      <a class="banners-button" href="#">Хочу варенье!</a></div>
 				  <div class=" banner banner-2">
 		      <h3>Шоколадки даром!</h3>
-			      <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-			      <a href="#">Хочу шоколадки!</a></div>
+			      <p class="banners-description">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
+			      <a class="banners-button" href="#">Хочу шоколадки!</a></div>
 	    </section>
 	    <section class="best-items">
 		    <h2 class="visually-hidden">Прайс на лучшие сорта</h2>
@@ -190,8 +190,8 @@
 	    </section>
 	    <section class="features">
 	      <h2 class="visually-hidden">Преимущества</h2>
-		    <b>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
-		    <ul class="feature-list">
+		    <b class="features-description">Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</b>
+		    <ul class="features-list">
           <!--непонятно с этими изображениями, может это и вовсе background, в общем не разобралась-->
 			    <li class="feature-item"><img class="ice-cream" src="img/ice-cream.svg" width="49" height="49">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
 			    <li class="feature-item"><img class="eco" src="img/eco.svg" width="49" height="49">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</li>
@@ -199,9 +199,10 @@
 			    <li class="feature-item"><img class="thermometer" src="img/thermometer.svg" width="49" height="49">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
 			  </ul>
 	    </section>
-	    <article>
+		<div class="article-subscription">
+	    <article class="article-new">
 		    <h2>Новое в нашем блоге</h2>
-		       <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
+		       <a class="article-description"  href="#">10 способов сервировки фруктовых щербетов к столу</a>
 	    </article>
 	    <section class="subscription">
 	      <h2 class="visually-hidden">Подписка на рассылку</h2>
@@ -212,15 +213,41 @@
 		       </form>
 
 	    </section>
+		</div>
    	  <section class="contacts">
 	      <h2 class="visually-hidden">Как добраться</h2>
-		      <img class="map" src="img/Layer3.png" width="1200" height="430" alt="Карта">
-          <img class="pin" src="img/pin.svg" width="80" height="140" alt="Метка" >
+		      <img class="pin" src="img/pin.svg" width="80" height="140" alt="Метка" >
+		  <div class="contact-form">
 		      <div class="contact-box">
 		        <p class="contact-box-name">Адрес главного офиса и офлайн-магазина:</p>
 		        <p class="contact-box-adress">ул. Большая Конюшенная<br>19/8, Санкт-Петербург</p>
+				<p class="contact-box-order">Для заказов по телефону:</p>
+				<p class="contact-box-phone">8 812 450-25-25</p>
+				<p class="contact-box-hours">(с 10 до 20 ежедневно)</p>
 		      </div>
+			  
+			 <a class="feedback-button" href="form.html">Форма обратной связи</a>
+            <div class="overlay-feedback overlay-feedback-hide">
+            </div>
+            <div class="feedback feedback-hide">
+              <p class="contact-form-text">
+                Мы обязательно вам ответим!
+              </p>
+              <form action="#" method="get">
+                <div class="input-field input-field-feedback">
+                  <input id="feedback-name" type="text" name="feedback-name"><label for="feedback-name">Как вас зовут?</label>
+                </div>
+                <div class="input-field input-field-feedback">
+                  <input id="feedback-email" type="email" name="feedback-email"><label for="feedback-email">Ваша почта для ответа?</label>
+                </div>
+                <div class="input-field input-field-feedback">
+                  <textarea id="feedback-text" name="feedback-text"></textarea><label for="feedback-text">Напишите что-нибудь...</label>
+                </div>
+                <input class="btn" type="submit" value="Отправить">
+                <button class="feedback-close"></button>
+              </form>
 	    </section>
+		</div>
 	  </main>
     </div>
 	  <footer>
@@ -245,5 +272,6 @@
 	    </div>
     </footer>
     </div>
+	</div>
   </body>
 </html>
