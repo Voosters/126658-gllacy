@@ -307,11 +307,17 @@ form,
 	display: flex;
 }
 
-.main-navigation,
-.site-navigation,
-.user-navigation  {
+.main-navigation   {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	align-items: center;
+
+}
+
+.site-navigation {
+  display: flex;
+  flex-direction: row;
+	justify-content: flex-start;
 	align-items: center;
 
 }
@@ -326,7 +332,7 @@ form,
   display: flex;
   padding-left: 27px;
   padding-right: 27px;
-  flex-direction: flex-end;
+  flex-direction: row;
 }
 
 
@@ -345,6 +351,7 @@ form,
 .best-items-center  {
 	display: flex;
 	flex-direction: row;
+  justify-content: center;
 }
 
 .article-subscription {
@@ -364,7 +371,6 @@ footer {
 	justify-content: space-between;
 	align-items: center;
 }
-
 
 .contacts {
 	background-image: url(../img/map.png);
