@@ -107,6 +107,32 @@ text-align: center;
 	margin-right: 0;
 }
 
+.slider-button {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  width: 280px;
+  height: 64px;
+  border-radius: 30px;
+  color: #ffffff;
+ }
+ 
+ .banners-button {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  opacity: 0.988;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  width: 165px;
+  height: 46px;
+  border-radius: 30px;
+  color: #ffffff;
+  text-align: center;
+}
+
+
+
 /*Шрифты index.html*/
 .menu-items {
 	line-height: 18px;
@@ -301,6 +327,24 @@ form,
 	visibility: hidden;
 }
 
+.banners-button {
+	position: absolute; 
+    bottom: 21px;
+    right: 21px;
+}
+
+.features  {
+	padding: 22px;
+	text-align: left;
+}
+
+.best-items {
+	margin-left: 27px;
+	text-align: center;
+}
+
+
+
 /*Флексбоксы*/
 
 .page-wrapper {
@@ -309,14 +353,14 @@ form,
 
 .main-navigation   {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: center;
 	align-items: center;
 
 }
 
 .site-navigation {
-  display: flex;
-  flex-direction: row;
+	display: flex;
+	flex-direction: row;
 	justify-content: flex-start;
 	align-items: center;
 
@@ -343,15 +387,18 @@ form,
 
 }
 
-.banners
- {
+.banners  {
 	display: flex;
 }
 
 .best-items-center  {
 	display: flex;
 	flex-direction: row;
-  justify-content: center;
+	justify-content: space-between;
+}
+
+.features-list {
+	display: flex;
 }
 
 .article-subscription {
@@ -375,6 +422,12 @@ footer {
 .contacts {
 	background-image: url(../img/map.png);
 	background-repeat: no-repeat;
+}
+
+.footer-menu {
+	display: flex;
+	flex-direction: column;
+	align-items: space-between;
 }
 
 .filters {
