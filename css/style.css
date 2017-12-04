@@ -52,6 +52,9 @@ form,
 .visually-hidden {
 	visibility: hidden;
 }
+form  {
+	display: block;
+}
 /*Конец Общих стилей*/
 /*Шрифты index.html*/
 .menu-items {
@@ -150,6 +153,7 @@ h2 {
 .contact-box-phone {
 	font-size: 18px;
 	line-height: 22px;
+	font-weight: 700;
 }
 .contact-box-hours {
 	font-size: 14px;
@@ -243,6 +247,7 @@ h2 {
 .slide,
 body>input[type=radio] {
     display: none;
+	
 
 }
 .slide-title {
@@ -345,13 +350,12 @@ body>input[type=radio] {
 	width: 1146px;
 }
 .banner {
-    width: 560px;
-    min-height: 230px;
+    width: 562px;
+    height: 230px;
     border-radius: 15px;
     margin-bottom: 40px;
     margin-top: 65px;
     margin-right: 23px;
-    margin-left: -2px;
     padding: 14px 20px;
     position: relative;
 }
@@ -376,7 +380,6 @@ body>input[type=radio] {
   border-radius: 30px;
   color: #ffffff;
   text-align: center;
-  vertical-align: middle;
 }
 .banners-button {
 	position: absolute;
@@ -385,6 +388,19 @@ body>input[type=radio] {
 }
 .banners  {
 	display: flex;
+}
+h3 {
+	position: relative;
+	bottom: 30px;
+}
+.banners-description {
+	padding-bottom: 45px;
+	position: relative;
+	bottom: 40px;
+}
+.banners-btn-text {
+	position: relative;
+	top: 10px;
 }
 /*Конец banners*/
 /*best-items*/
@@ -428,6 +444,14 @@ body>input[type=radio] {
 	flex-direction: row;
 	justify-content: space-between;
 }
+.best-item-description {
+	
+	width: 250px;
+	position: relative;
+	left: 30px;
+	bottom: 10px;
+
+}
 .order  {
 	display: none;
 }
@@ -464,25 +488,40 @@ body>input[type=radio] {
 	background-image: url(../img/ice-cream.svg);
 	background-repeat: no-repeat;
 	background-position: 0% 10%;
-  padding-right: 40px;
+	padding-right: 40px;
+	width: 541px;
+	position: relative;
+	top: 10px;
 }
 .feature-item2  {
 	background-image: url(../img/cow.svg);
 	background-repeat: no-repeat;
 	background-position: 0% 10%;
-  padding-right: 10px;
+    padding-right: 10px;
+  	width: 554px;
+	position: relative;
+	right: 10px;
+	top: 10px;
 }
 .feature-item3 {
 	background-image: url(../img/eco.svg);
 	background-repeat: no-repeat;
 	background-position: 0% 10%;
-  padding-right: 40px;
+    padding-right: 40px;
+    width: 541px;
+	position: relative;
+	top: 10px;
+	right: 5px;
 }
 .feature-item4 {
 	background-image: url(../img/thermometer.svg);
 	background-repeat: no-repeat;
 	background-position: 0% 10%;
-  padding-right: 10px;
+    padding-right: 10px;
+    width: 530px;
+	position: relative;
+	right: 30px;
+	top: 10px;
 }
 .ice-cream-text,
 .cow-text,
@@ -490,18 +529,11 @@ body>input[type=radio] {
 .thermometer-text {
 	padding-left: 57px;
 }
-.feature-item1 {
-	width: 541px;
+.features-description {
+	position: relative;
+	top: 20px;
 }
-.feature-item2 {
-	width: 554px;
-}
-.feature-item3 {
-	width: 541px;
-}
-.feature-item4 {
-	width: 554px;
-}
+
 /*Конец features*/
 /*article-subscription*/
 .article-subscription {
@@ -523,66 +555,71 @@ body>input[type=radio] {
 .article-new  {
 	background-image: url(../img/strawberry-bg.jpg);
 	background-repeat: no-repeat;
-  background-position: 20% 35%;
+  background-position: 17% 39%;
   position: relative;
   left: 25px;
   color: #323232;
 }
-
 .article-description {
 	color: #323232;
+	position: relative;
+	left: 22px;
+	text-decoration: underline;
+}
+.blog-name {
+	position: relative;
+	left: 22px;
 }
 .subscription {
   background-image: url(../img/bg-post.svg);
-	background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-color: #f8f7f4;
   background-size: cover;
   position: relative;
   left: 30px;
   color: #323232;
 }
+.sub-discription {
+	position: relative;
+	left: 22px;
+	padding-top: 25px;
+	padding-right: 40px;
+}
 .subscription-wrapper {
   background-color: #f8f7f4;
   border-radius: 15px;
+  width: 550px;
+  height: 210px;
+  position: relative;
+  left: 5px;
+  bottom: 8px;
 }
+.sub-placeholder {
+	width: 367px;
+	height: 44px;
+	border: 1px solid #d3d3d2;
+	border-radius: 5px;
+	line-height: 24px;
+	padding-left: 5px;
+	position: relative;
+	left: 17px;
 
-
-/*.article-new {
-	background-color: #ffffff;
-	background-image: url(../img/strawberry-bg.jpg);
-	background-repeat: no-repeat;
-	background-position: 20% 35%;
-	width: 560px;
-  min-height: 222px;
-  border-radius: 15px;
-  margin-bottom: 40px;
-  margin-top: 40px;
-  margin-right: 25px;
-  padding: 15px 20px;
-  color: #323232;
 }
-.subscription  {
-	background-color: #f8f7f4;
-	background-image: url(../img/bg-post.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 560px;
-    min-height: 222px;
-    border-radius: 15px;
-    margin-bottom: 40px;
-    margin-top: 40px;
-    margin-right: 23px;
-    padding: 15px 20px;
-    color: #323232;
-}
+.sub-button {
+  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  width: 129px;
+  height: 44px;
+  border-radius: 30px;
+  position: relative;
+  left: 25px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
 
-.article-description {
-	color: #323232;
 }
-.article-subscription {
-	display: flex;
-
-}*/
 /*Конец article-subscription*/
 /*contacts*/
 .contacts-map {
@@ -609,6 +646,31 @@ body>input[type=radio] {
 	background-color: white;
 	border-radius: 10px;
 	min-height: 270px;
+}
+.contact-box {
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+}
+.contact-box-name {
+	position: relative;
+	bottom: 15px;
+}
+.contact-box-adress {
+	position: relative;
+	bottom: 45px;
+}
+.contact-box-order {
+	position: relative;
+	bottom: 60px;
+}
+.contact-box-phone {
+	position: relative;
+	bottom: 90px;
+}
+.contact-box-hours {
+	position: relative;
+	bottom: 120px;
 }
 /*Конец contacts*/
 /*footer*/
