@@ -16,9 +16,10 @@
         <header class="main-header">
 		<div class="site-user-nav">
           <nav class="main-navigation">
-            <img class="index-logo" src="img/index-logo.svg" width="154" height="64"  alt="Логотип GllacyShop">
+
             <ul class="site-navigation">
-              <li>
+            <li class="index-logo"><img src="img/index-logo.svg" width="154" height="64"  alt="Логотип GllacyShop"></li>
+              <li class="catalog">
                 <a class="menu-items" href="catalog.html">Каталог</a>
                 <ul class="catalog-menu">
                   <li class="catalog-menu-item">
@@ -38,10 +39,10 @@
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="delivery">
                 <a class="menu-items" href="#">Доставка и оплата</a>
               </li>
-              <li>
+              <li class="about">
                 <a class="menu-items" href="#">О компании</a>
               </li>
             </ul>
@@ -86,10 +87,10 @@
                 <span class="phone-number">8 812 450 25 25</span>
               </p>
             </div>
-          
+
         </header>
         <main>
-          <h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>
+          <!--<h1 class="visually-hidden">Магазин мороженого «Глейси»</h1>-->
 <section class="slider">
           <div class="slide" id="slide1">
             <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
@@ -160,7 +161,7 @@
                 <article class="best-item">
 				<div class="best-item-wrapper">
 				  <a href="#">
-                  
+
                   <img class="best-item-image" src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
 				   </a>
                   <div class="best-item-price">355
@@ -177,7 +178,7 @@
                 <article class="best-item">
 				<div class="best-item-wrapper">
 				  <a href="#">
-                  
+
                   <img class="best-item-image" src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
 				   </a>
                   <div class="best-item-price">415
@@ -200,25 +201,27 @@
             <ul class="features-list">
               <li class="feature-item1"><p class="ice-cream-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p></li>
 			  <li class="feature-item2"><p class="cow-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p></li>
-              <li class="feature-item3"><p class="eco-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>             
+              <li class="feature-item3"><p class="eco-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p></li>
               <li class="feature-item4"><p class="thermometer-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p></li>
             </ul>
 			</div>
           </section>
           <div class="article-subscription">
-            <article class="article-new">
+          <div class="article-subscription-wrapper">
+            <article class="blog-mail article-new">
               <h2>Новое в нашем блоге</h2>
               <a class="article-description"  href="#">10 способов сервировки фруктовых щербетов к столу</a>
             </article>
-            <section class="subscription">
-			    <div class="subscription-wrapper">
-              <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <section class="blog-mail subscription">
+            <div class="subscription-wrapper">
+			      <p>Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form action="" method="get">
                 <input type="email" name="subscribe-email" placeholder="Электронная почта" required>
                 <input type="submit" name="Отправить">
               </form>
-			  </div>
+            </div>
             </section>
+			  </div>
           </div>
         </main>
         <section class="contacts">
