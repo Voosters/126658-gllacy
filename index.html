@@ -136,7 +136,7 @@
                     <span class="best-item-weight">/кг</span>
                   </div></div>
                   <p class="best-item-description">
-                    <span>Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
+                    <a class="text-border" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
                   </p>
                   <div class="overlay">
                     <a class="overlay-link" href="#">Быстрый просмотр</a>
@@ -152,7 +152,7 @@
                     <span class="best-item-weight">/кг</span>
                   </div></div>
                   <p class="best-item-description">
-                    <span>Сливочно-кофейное с кусочками шоколада</span>
+                    <a class="text-border" href="#">Сливочно-кофейное с кусочками шоколада</a>
                   </p>
                   <div class="overlay">
                     <a class="overlay-link" href="#">Быстрый просмотр</a>
@@ -169,7 +169,7 @@
                     <span class="best-item-weight">/кг</span>
                   </div></div>
                   <p class="best-item-description">
-                    <span>Сливочно-клубничное с присыпкой из белого шоколада</span>
+                    <a class="text-border" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
                   </p>
                   <div class="overlay">
                     <a class="overlay-link" href="#">Быстрый просмотр</a>
@@ -186,7 +186,7 @@
                     <span class="best-item-weight">/кг</span>
                   </div></div>
                   <p class="best-item-description">
-                    <span>Сливочное крем-брюле с карамельной подливкой</span>
+                    <a class="text-border" href="#">Сливочное крем-брюле с карамельной подливкой</a>
                   </p>
                   <div class="overlay">
                     <a class="overlay-link" href="#">Быстрый просмотр</a>
@@ -227,6 +227,7 @@
         <section class="contacts">
           <h2 class="visually-hidden">Как добраться</h2>
 		  <div class="contacts-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1680.626500259789!2d30.324913289047686!3d59.93856375735322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1463165208330" allowfullscreen></iframe>
             <div class="contact-form">
             <div class="contact-box">
               <p class="contact-box-name">Адрес главного офиса <br>и офлайн-магазина:</p>
@@ -235,26 +236,26 @@
               <p class="contact-box-phone">8 812 450-25-25</p>
               <p class="contact-box-hours">(с 10 до 20 ежедневно)</p>
             </div>
-            <a class="feedback-button" href="form.html">Форма обратной связи</a>
-            <div class="overlay-feedback overlay-feedback-hide">
-            </div>
-            <div class="feedback feedback-hide">
-              <p class="contact-form-text">
+            <div class="feedback-button" ><a href="#open-modal">Форма обратной связи</a></div>
+            <div class="modal" id="open-modal">
+            <div class="modal-container">
+            <p class="contact-form-text">
                 Мы обязательно вам ответим!
               </p>
               <form action="#" method="get">
                 <div class="input-field input-field-feedback">
-                  <input id="feedback-name" type="text" name="feedback-name"><label for="feedback-name">Как вас зовут?</label>
+                  <input class="contact-placeholder"" id="feedback-name" type="text" name="feedback-name" placeholder="Как вас зовут?">
                 </div>
                 <div class="input-field input-field-feedback">
-                  <input id="feedback-email" type="email" name="feedback-email"><label for="feedback-email">Ваша почта для ответа?</label>
+                  <input class="contact-placeholder" id="feedback-email" type="email" name="feedback-email" placeholder="Ваша почта для ответа" >
                 </div>
                 <div class="input-field input-field-feedback">
-                  <textarea id="feedback-text" name="feedback-text"></textarea><label for="feedback-text">Напишите что-нибудь...</label>
+                  <textarea class="contact-placeholder-big"" id="feedback-text" name="feedback-text" placeholder="Напишите что-нибудь..."></textarea>
                 </div>
-                <input class="btn" type="submit" value="Отправить">
+                <input class="send-button" type="submit" value="Отправить">
                 <button class="feedback-close"></button>
               </form>
+            </div>
             </div>
           </div>
 		  </div>
@@ -269,10 +270,10 @@
           </div>
           <ul class="footer-menu">
             <!--<h2 class="visually-hidden">Дополнительное меню</h2>-->
-            <li class="footer-menu-icon"><a class="provider-text" href="#">Для поставщиков</a></li>
-			<li><a class="documents-text" href="#">Наши документы</a></li>
-            <li><a class="produce-text" href="#">О производстве</a></li>
-            <li><a class="ecology-text" href="#">Экологические стандарты</a></li>
+            <li class="footer-menu-icon"><a class="provider-text" href="#"><span class="text-border">Для поставщиков</span></a></li>
+			<li><a class="documents-text" href="#"><span class="text-border">Наши документы</span></a></li>
+            <li><a class="produce-text" href="#"><span class="text-border">О производстве</span></a></li>
+            <li><a class="ecology-text" href="#"><span class="text-border">Экологические стандарты</span></a></li>
           </ul>
           <div class="footer-copyright">
             <a class="footer-copyright-logo"><img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML Academy"></a>
