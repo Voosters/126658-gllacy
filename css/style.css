@@ -820,4 +820,21 @@ footer {
 	background-position: 5% 50%;
 }
 /*Конец footer*/
-
+/*СКОПИРОВАТЬ ОТДЕЛЬНО!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.filters  {
+	display: flex;
+	flex-wrap: wrap;
+}
+.sort-filter {
+	background-color: rgba(0, 0, 0, 0.5); 
+	border: 2px solid pink;
+	border-radius: 40px;
+}
+.sort-text {
+	
+}
+.price-filter {
+	background-color: rgba(0, 0, 0, 0.5); 
+	border: 2px solid pink;
+	border-radius: 40px;
+}
