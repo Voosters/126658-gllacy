@@ -3,42 +3,47 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<link href="css/normalize.css" rel="stylesheet">
-	<link href="css/style.css" type="text/css"  rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" type="text/css"  rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-	    <nav class="main-navigation">
-        <img src="img/index-logo.svg" width="154" height="64"  alt="Логотип GllacyShop">
-		    <ul class="site-navigation">
-			    <li>
-            <a href="catalog.html">Каталог</a>
-              <ul class="catalog-menu">
-                <li class="catalog-menu-item">
-                  <a href="#">Новинки</a>
+    <div class="page-wrapper">
+      <div class="content-wrapper">
+        <header class="main-header">
+          <div class="site-user-nav">
+            <nav class="main-navigation">
+              <ul class="site-navigation">
+                <li class="index-logo"><img src="img/index-logo.svg" width="154" height="64"  alt="Логотип GllacyShop"></li>
+                <li class="catalog">
+                  <a class="menu-items" href="catalog.html">Каталог</a>
+                  <ul class="catalog-menu">
+                    <li class="catalog-menu-item">
+                      <a href="#"><span class="catalog-item1">Новинки</span></a>
+                    </li>
+                    <li class="catalog-menu-item">
+                      <a href="catalog.html">Сливочное</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                      <a href="#">Щербеты</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                      <a href="#">Фруктовый лёд</a>
+                    </li>
+                    <li class="catalog-menu-item">
+                      <a href="#">Мелорин</a>
+                    </li>
+                  </ul>
                 </li>
-                <li class="catalog-menu-item">
-                  <a href="catalog.html">Сливочное</a>
+                <li class="delivery">
+                  <a class="menu-items" href="#">Доставка и оплата</a>
                 </li>
-                <li class="catalog-menu-item">
-                  <a href="#">Щербеты</a>
-                </li>
-                <li class="catalog-menu-item">
-                  <a href="#">Фруктовый лёд</a>
-                </li>
-                <li class="catalog-menu-item">
-                  <a href="#">Мелорин</a>
+                <li class="about">
+                  <a class="menu-items" href="#">О компании</a>
                 </li>
               </ul>
-          </li>
-			    <li>
-            <a href="#">Доставка и оплата</a>
-          </li>
-			    <li>
-            <a href="#">О компании</a>
-          </li>
-		    </ul>
+            </nav>
+
 		    <div class="user-navigation">
    	      <div  class="search">
 			      <a href="#"><img class="search-svg" src="img/loupe.svg" width="17" height="17" alt="Поиск"></a>
@@ -117,8 +122,12 @@
 			      <span class="phone-number">8 812 450 25 25</span>
 		      </p>
         </div>
-	    </nav>
+
 	  </header>
+
+
+
+
     <main class="catalog-container">
       <ul class="menu-breadcrumbs">
         <li class="menu-breadcrumbs-item">
@@ -180,164 +189,197 @@
       <section class="main-catalog">
         <h2 class="visually-hidden">Каталог</h2>
 		<div class="all-best-items">
-          <article class="best-item">
-            <img class="best-item-image" src="img/1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом">
-              <p class="best-item-price">310
-              <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-                <span class="best-item-weight">/кг</span>
-              </p>
-              <p class="best-item-description">
-                <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
-              </p>
-              <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
-          <article class="best-item">
-            <img class="best-item-image" src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
-            <p class="best-item-price">380
-            <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-            </p>
-            <p class="best-item-description">
-              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
+                <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/1.jpg" width="267" height="267" alt="Сливочное мороженое с апельсиновым джемом">
+                    </a>
+                    <div class="best-item-price">310 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+                                <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/2.jpg" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
+                    </a>
+                    <div class="best-item-price">380 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочно-кофейное с кусочками шоколада</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
 
-          <article class="best-item">
-            <img class="best-item-image" src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
-            <p class="best-item-price">355
-            <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-            </p>
-            <p class="best-item-description">
-              <a href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
+                      <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/3.jpg" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+                    </a>
+                    <div class="best-item-price">355 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочно-клубничное с присыпкой из белого шоколада</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
 
-          <article class="best-item">
-            <img class="best-item-image" src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
-            <p class="best-item-price">415
-            <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-            </p>
-            <p class="best-item-description">
-              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
-          <article class="best-item">
-            <img class="best-item-image" src="img/5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
-              <p class="best-item-price">325
-              <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-              </p>
-            <p class="best-item-description">
-              <a href="#">Сливочное с брусничным джемом</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
-          <article class="best-item">
-            <img class="best-item-image" src="img/6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
-            <p class="best-item-price">410
-            <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-            </p>
-            <p class="best-item-description">
-              <a href="#">Сливочно-черничное с цельными ягодами черники</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
-          <article class="best-item">
-            <img class="best-item-image" src="img/7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
-            <p class="best-item-price">375
-            <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-            </p>
-            <p class="best-item-description">
-              <a href="#">Сливочно-лимонное с карамельной присыпкой</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
-          <article class="best-item">
-            <img class="best-item-image" src="img/8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
-            <p class="best-item-price">320
-            <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-            </p>
-            <p class="best-item-description">
-              <a href="#">Сливочное с шоколадной стружкой</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
-          <article class="best-item">
-            <img class="best-item-image" src="img/9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
-              <p class="best-item-price">440
-              <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-              </p>
-            <p class="best-item-description">
-              <a href="#">Сливочно-ванильное с кусочками шоколада</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
-          <article class="best-item">
-            <img class="best-item-image" src="img/10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
-            <p class="best-item-price">435
-            <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-            </p>
-            <p class="best-item-description">
-              <a href="#">Сливочное с ментоловым сиропом</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
-          <article class="best-item">
-            <img class="best-item-image" src="img/11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
-            <p class="best-item-price">355
-            <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-            </p>
-            <p class="best-item-description">
-              <a href="#">Сливочное с кусочками черного шоколада</a>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-          </article>
-          <article class="best-item">
-            <img class="best-item-image" src="img/12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
-            <p class="best-item-price">420
-            <img class="ruble" src="img/ruble.svg" width="31" height="36" alt="Рубль">
-              <span class="best-item-weight">/кг</span>
-            </p>
-            <div class="overlay">
-            <a class="overlay-link" href="#">Быстрый просмотр</a>
-            </div>
-            <p class="best-item-description">
-              <a href="#">Сливочное с мятным сиропом</a>
-            </p>
-          </article>
+                                      <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/4.jpg" width="267" height="267" alt="Сливочное крем-брюле с карамельной подливкой">
+                    </a>
+                    <div class="best-item-price">415 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+
+                                            <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/5.jpg" width="267" height="267" alt="Сливочное с брусничным джемом">
+                    </a>
+                    <div class="best-item-price">325 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочное с брусничным джемом</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+
+                   <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/6.jpg" width="267" height="267" alt="Сливочно-черничное с цельными ягодами черники">
+                      </a>
+                    <div class="best-item-price">410 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочно-черничное с цельными ягодами черники</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+
+                   <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/7.jpg" width="267" height="267" alt="Сливочно-лимонное с карамельной присыпкой">
+                      </a>
+                    <div class="best-item-price">375 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочно-лимонное с карамельной присыпкой</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+
+                                    <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/8.jpg" width="267" height="267" alt="Сливочное с шоколадной стружкой">
+                      </a>
+                    <div class="best-item-price">320 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочное с шоколадной стружкой</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+
+                                  <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/9.jpg" width="267" height="267" alt="Сливочно-ванильное с кусочками шоколада">
+                      </a>
+                    <div class="best-item-price">440 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочно-ванильное с кусочками шоколада</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+
+                                                  <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/10.jpg" width="267" height="267" alt="Сливочное с ментоловым сиропом">
+                      </a>
+                    <div class="best-item-price">435 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочное с ментоловым сиропом</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+
+                    <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/11.jpg" width="267" height="267" alt="Сливочное с кусочками черного шоколада">
+                      </a>
+                    <div class="best-item-price">355 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочное с кусочками черного шоколада</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+
+                 <article class="best-item">
+                  <div class="best-item-wrapper">
+                    <a href="#">
+                      <img class="best-item-image" src="img/12.jpg" width="267" height="267" alt="Сливочное с мятным сиропом">
+                      </a>
+                    <div class="best-item-price">420 &#8381;
+                      <span class="best-item-weight">/кг</span>
+                    </div>
+                    <p class="best-item-description">
+                      <a class="text-border" href="#">Сливочное с мятным сиропом</a>
+                    </p></div>
+                    <div class="overlay">
+                      <a class="overlay-link" href="#">Быстрый просмотр</a>
+                    </div>
+                </article>
+
 		  </div>
           <div class="pages">
             <ul>
@@ -362,26 +404,25 @@
           </div>
       </section>
     </main>
-	  <footer>
-	    <div class="footer-social">
-      <h2 class="visually-hidden">Социальные сети</h2>
-	      <a class="social-button" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твитер"></a>
-		    <a class="social-button" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a>
-		    <a class="social-button" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a>
-		    <a class="social-button" href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте"></a>
-	    </div>
-	    <ul class="footer-menu">
-       <h2 class="visually-hidden">Дополнительное меню</h2>
-      <img class="footer-menu-icon" src="img/heart.svg" width="15" height="13">
-	       <li><a href="#">Для поставщиков</a></li>
-		    <li><a href="#">О производстве</a></li>
-		    <li><a href="#">Наши документы</a></li>
-		    <li><a href="#">Экологические стандарты</a></li>
-	    </ul>
-      <div class="footer-copyright">
-         <a class="footer-copyright-logo"><img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML Academy"></a>
-		    <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2017</p>
-	    </div>
-    </footer>
+        <footer>
+          <div class="footer-social">
+            <!--<h2 class="visually-hidden">Социальные сети</h2>-->
+            <a class="social-button twitter" href="#"><img src="img/twitter.svg" width="32" height="32" alt="Твитер"></a>
+            <a class="social-button instagram" href="#"><img src="img/instagram.svg" width="32" height="32" alt="Инстаграм"></a>
+            <a class="social-button facebook" href="#"><img src="img/fb.svg" width="32" height="32" alt="Фейсбук"></a>
+            <a class="social-button vkontakte" href="#"><img src="img/vk.svg" width="32" height="32" alt="Вконтакте"></a>
+          </div>
+          <ul class="footer-menu">
+            <!--<h2 class="visually-hidden">Дополнительное меню</h2>-->
+            <li class="footer-menu-icon"><a class="provider-text" href="#"><span class="text-border">Для поставщиков</span></a></li>
+            <li><a class="documents-text" href="#"><span class="text-border">Наши документы</span></a></li>
+            <li><a class="produce-text" href="#"><span class="text-border">О производстве</span></a></li>
+            <li><a class="ecology-text" href="#"><span class="text-border">Экологические стандарты</span></a></li>
+          </ul>
+          <div class="footer-copyright">
+            <a class="footer-copyright-logo"><img src="img/logo-htmlacademy.svg" width="108" height="37" alt="Логотип HTML Academy"></a>
+            <p class="copyright-text">Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2017</p>
+          </div>
+        </footer>
   </body>
 </html>
