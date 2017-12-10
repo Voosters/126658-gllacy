@@ -28,7 +28,10 @@ footer {
 	padding-right: 27px;
 }
 
-
+a:hover,
+a:active {
+	color: #ffbc9e;
+}
 
 
 
@@ -287,6 +290,14 @@ h2 {
    left: 8px;
    top: 8px;
 }
+.search-placeholder {
+	width: 310px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	 border: 1px solid #d3d3d2;
+    border-radius: 5px;
+	padding-left: 5px;
+	}
 
 .entrance {
    background-color: rgba(248, 247, 244, 0.3);
@@ -312,6 +323,40 @@ padding: 17px;
     border-radius: 5px;
     box-shadow: 0 20px 20px rgba(0,0,0,.4);
 	background-color: #f8f7f4;
+}
+.entrance-placeholder {
+	width: 241px;
+    border: 1px solid #d3d3d2;
+    border-radius: 5px;
+    line-height: 24px;
+    padding-left: 5px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 15px;    
+}
+.entrance-button {
+background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+border-radius: 30px;
+color: #ffffff;
+font-size: 18px;
+font-weight: 700;
+padding-top: 11px;
+padding-bottom: 11px;
+margin-left: 10px;
+margin-right: 35px;
+}
+.entrance-action a {
+	color: #323232;
+}
+.entrance-action {
+	display: flex;
+
+	
+	
 }
 .search:hover .search-form {
 	display: block;
@@ -649,11 +694,12 @@ body>input[type=radio] {
 }
 
 .banners-button {
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background: #f26843;
+    background: linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   opacity: 0.988;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
+   text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
   width: 165px;
   border-radius: 30px;
   color: #ffffff;
@@ -664,11 +710,12 @@ body>input[type=radio] {
 }
 
 .banners-button1 {
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+background: #f26843;
+background: linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
   opacity: 0.988;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
+   text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
   width: 165px;
   border-radius: 30px;
   color: #ffffff;
@@ -677,10 +724,28 @@ body>input[type=radio] {
   padding-top: 15px;
   padding-bottom: 15px;
 }
-
-
-
-
+.banners-button:hover {
+    color: #fff;
+    background: linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px #ac1000
+}
+.banners-button1:hover {
+    color: #fff;
+    background: linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px #ac1000
+}
+.banners-button:active {
+    background: linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px #ac1000
+}
+.banners-button1:active {
+    background: linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px #ac1000
+}
 .banners-description {
 	padding-left: 27px;
 margin-bottom: 49px;
@@ -774,6 +839,18 @@ padding-top: 14px;
 padding-bottom: 14px;
 margin-top: 350px;
 }
+.overlay-link:hover {
+    color: #fff;
+    background: linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px #ac1000
+}
+.overlay-link:active {
+    background: linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px #ac1000
+}
+
 .best-item-wrapper::before {
 	content: "" ;
 	background-image: url(../img/hit.svg);
@@ -936,12 +1013,12 @@ margin-bottom: 7px;
     margin-left: 20px;
 }
 .sub-button {
-background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+background: #f26843;
+background: linear-gradient(top, #f26843 0%, #e74a35 100%);
+background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
+text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
 width: 129px;
-height: 44px;
 border-radius: 30px;
 color: #ffffff;
 font-size: 18px;
@@ -949,6 +1026,17 @@ font-weight: 700;
 padding-top: 11px;
 padding-bottom: 11px;
 margin-left: 10px;
+}
+.sub-button:hover {
+    color: #fff;
+    background: linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px #ac1000
+}
+.sub-button:active {
+    background: linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px #ac1000
 }
 /*Конец article-subscription*/
 /*contacts*/
@@ -995,7 +1083,8 @@ margin-bottom: 25px;
 margin-top: 30px;
 }
 .contact-box-adress {
-margin: 0px;
+	margin: 0px;
+margin-right: 10px;
 }
 .contact-box-order {
 	margin-bottom: 0px;
@@ -1007,16 +1096,29 @@ margin: 0px;
 	margin: 0px;
 }
 .feedback-button {
-  background-image: -moz-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -webkit-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  background-image: -ms-linear-gradient( 90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  background: #f26843;
+    background: linear-gradient(top, #f26843 0%, #e74a35 100%);
+    background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  box-shadow: 0 2px 2px rgba(172, 16, 0, .64);
+  text-shadow: 0 2px 5px rgba(160, 32, 11, .76);
   width: 252px;
-  height: 44px;
   color: #ffffff;
   border-radius: 30px;
   margin-top: 30px;
+  padding-top: 10px;
+padding-bottom: 10px;
 
+}
+.feedback-button:hover {
+    color: #fff;
+    background: linear-gradient(top, #f58669 0%, #ec6f5e 100%);
+    background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+    box-shadow: 0 2px 2px #ac1000
+}
+.feedback-button:active {
+    background: linear-gradient(top, #d84732 0%, #e1613e 100%);
+    background: linear-gradient(to bottom, #d84732 0%, #e1613e 100%);
+    box-shadow: inset 0 2px 2px #ac1000
 }
 .feedback-button a {
 
@@ -1091,6 +1193,7 @@ margin-left: 25px;
 	padding-left: 5px;
 	margin-bottom: 20px;
 }
+
 /*Конец contacts*/
 /*footer*/
 footer {
@@ -1104,13 +1207,17 @@ footer {
   align-self: center;
   width: 186px;
   min-height: 38px;
+  
 }
-.twitter {
-  background: url("../img/twitter.svg") no-repeat;
-   border: 4px solid rgba(248, 247, 244, 0.3);
+.twitter  {
+  background-image: url("../img/twitter.svg"); 
+  background-repeat: no-repeat;
+  border: 4px solid rgba(248, 247, 244, 0.3);
   width: 32px;
   height: 32px;
   border-radius: 36px;
+  background-color: #849d8f;
+  opacity: 0.8;
 }
 .instagram {
 	background: url("../img/instagram.svg") no-repeat;
@@ -1118,6 +1225,8 @@ footer {
   width: 32px;
   height: 32px;
   border-radius: 36px;
+  background-color: #849d8f;
+  opacity: 0.8;
 }
 .facebook {
 	background: url("../img/fb.svg") no-repeat;
@@ -1125,6 +1234,8 @@ footer {
   width: 32px;
   height: 32px;
   border-radius: 36px;
+  background-color: #849d8f;
+  opacity: 0.8;
 }
 .vkontakte {
 	background: url("../img/vk.svg") no-repeat;
@@ -1132,6 +1243,8 @@ footer {
   width: 32px;
   height: 32px;
   border-radius: 36px;
+  background-color: #849d8f;
+  opacity: 0.8;
 }
 .footer-menu {
   display: flex;
